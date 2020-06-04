@@ -63,4 +63,4 @@ Vai ser gerado o seguinte arquivo (com os "apontamentos") na raiz do projeto:
 **Thats all folks!!!**
 
 
-**@victorgsp** (se quiser pagar uma água com gás esse é o picpay tbm :P )
+**@victorgsp** (se quiser me dar uma(s) água com gás esse é o picpay tbm :P )
