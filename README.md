@@ -54,12 +54,3 @@ Rodar os comandos:
 > npm i
 
 > npm start
-vidir por 20 (quantidade de items por página).
-
-
-## Como executar
-
-Rodar os comandos:
-> npm i
-
-> npm start
