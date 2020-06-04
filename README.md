@@ -12,7 +12,7 @@
  1. Abra o dev tools do chrome para sua página do slack
  2. Preencha o search do slack com os seguintes valores: 
  **from:**@seu_usuario in:#canal-slack-para-pegar-msg
- 3. Encontre a requisição da seguinte requisição na aba network do devtools: https://cesar.slack.com/api/search.modules...
+ 3. Encontre a requisição da seguinte requisição na aba network do devtools: https://organizacao.slack.com/api/search.modules...
  **obs:** certifique-se que a requisição é do *module: "messages"* 
  4. Clicando com o botão direito do mouse copie a requisição no formato *"Copy as node js fetch"* 
  5. Substitua todo o fetch do arquivo code/download.js com o conteúdo copiado.
