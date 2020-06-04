@@ -48,7 +48,8 @@
  7. Outro valor que pode ser modificado no arquivo download.js é a quantidade de páginas (*quantityOfPagesToDownload*) do resultado da pesquisa que serão baixadas. Isso varia de acordo com a quantidade de mensagens mandada por você. Pode fazer uma estimativa da quantidade de páginas olhando o response da requisição do passo 3 no campo *pagination.total_count* no devtools e dividir por 20 (quantidade de items por página).
 
 
-## Como executar
+
+## Executando
 
 Rodar os comandos:
 > npm i
