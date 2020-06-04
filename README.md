@@ -55,3 +55,12 @@ Rodar os comandos:
 > npm i
 
 > npm start
+
+Vai ser gerado o seguinte arquivo (com os "apontamentos") na raiz do projeto:
+> "**final_data.csv**"
+**obs:** escolha alguns dias aleatórios para verificar se está realmente ok com as informações colocadas no slack.
+
+**Thats all folks!!!**
+
+
+**@victorgsp** (se quiser pagar uma água com gás esse é o picpay tbm :P )
