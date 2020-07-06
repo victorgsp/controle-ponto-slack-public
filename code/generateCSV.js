@@ -5,6 +5,8 @@ dayjs.extend(dayOfYear)
 
 module.exports.execute = async function(){
 
+    const qtdJobHours = 8;
+    const format = process.argv.slice(2).length >= 1;
     let rawdata = fs.readFileSync('treated_data.json');
     let messages = JSON.parse(rawdata);
     
@@ -33,7 +35,13 @@ module.exports.execute = async function(){
             
             const dif1 = transformHour(h2).diff(transformHour(h1));
             const dif2 = transformHour(h4).diff(transformHour(h3));
-            cvsContent += data.add(dif1 + dif2, 'ms').format("HH:mm");
+            const finalDate = data.add(dif1 + dif2, 'ms');
+            cvsContent += `${format ? 'Total:' : ''} ${finalDate.format("HH:mm")}`;
+
+            if (finalDate.hour() >= qtdJobHours) {
+                cvsContent += `${format ? ' | Extra:' : ''} ${finalDate.subtract(qtdJobHours, 'hour').format("HH:mm")}`;
+            }
+
         }
     }
     
