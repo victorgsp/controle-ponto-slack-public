@@ -36,10 +36,10 @@ module.exports.execute = async function(){
             const dif1 = transformHour(h2).diff(transformHour(h1));
             const dif2 = transformHour(h4).diff(transformHour(h3));
             const finalDate = data.add(dif1 + dif2, 'ms');
-            cvsContent += `${format ? 'Total:' : ''} ${finalDate.format("HH:mm")}`;
+            cvsContent += `${format ? 'Total:' : ''}${finalDate.format("HH:mm")}`;
 
             if (finalDate.hour() >= qtdJobHours) {
-                cvsContent += `${format ? ' | Extra:' : ''} ${finalDate.subtract(qtdJobHours, 'hour').format("HH:mm")}`;
+                cvsContent += `${format ? ' | Extra:' : ','}${finalDate.subtract(qtdJobHours, 'hour').format("HH:mm")}`;
             }
 
         }
