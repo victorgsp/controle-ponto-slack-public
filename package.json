@@ -19,6 +19,6 @@
   "homepage": "https://github.com/victorgsp/controle-ponto-slack#readme",
   "dependencies": {
     "dayjs": "^1.8.28",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   }
 }
